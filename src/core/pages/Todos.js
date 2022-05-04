@@ -69,9 +69,11 @@ export default function Todos() {
   return (
     <div className="bg-white dark:bg-slate-900 mt-6 h-70v pb-4 overflow-y-scroll">
       <div className="container px-6 pb-2 mx-auto">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize dark:text-white">
-          Todos
-        </h1>
+        {false && (
+          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize dark:text-white">
+            Todos
+          </h1>
+        )}
 
         <section className="relative w-full max-w-md px-5 py-2 mx-auto rounded-md">
           <TodoInput></TodoInput>
